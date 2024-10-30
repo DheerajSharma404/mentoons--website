@@ -15,6 +15,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineClose } from "react-icons/md";
 import { NavLink, useNavigate } from "react-router-dom";
 import { FaHome, FaCalendarAlt, FaPhone } from "react-icons/fa";
+import { IoCart } from "react-icons/io5";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -86,6 +87,13 @@ const Header = () => {
             <NavLink to="/hiring" onClick={() => setMenuOpen(false)}>
               <MenubarTrigger className="cursor-pointer hover:text-white hover:bg-red-500 h-[4.5rem] text-base whitespace-nowrap text-white font-semibold">
                 Join Us
+              </MenubarTrigger>
+            </NavLink>
+          </MenubarMenu>
+          <MenubarMenu>
+            <NavLink to="/mentoons-store" onClick={() => setMenuOpen(false)}>
+              <MenubarTrigger className="cursor-pointer hover:text-white hover:bg-red-500 h-[4.5rem] text-base whitespace-nowrap text-white font-semibold">
+                <div className="flex items-center justify-around gap-2"><IoCart />Store</div>
               </MenubarTrigger>
             </NavLink>
           </MenubarMenu>
@@ -219,6 +227,13 @@ const Header = () => {
             <NavLink to="/hiring" onClick={() => setMenuOpen(false)}>
               <MenubarTrigger className="cursor-pointer hover:text-white hover:bg-red-500 h-full text-base whitespace-nowrap text-[#989ba2] lg:text-white font-semibold lg:hidden">
                 Join Us
+              </MenubarTrigger>
+            </NavLink>
+          </MenubarMenu>
+          <MenubarMenu>
+            <NavLink to="/mentoons-store" onClick={() => setMenuOpen(false)}>
+              <MenubarTrigger className="cursor-pointer hover:text-white hover:bg-red-500 h-[4.5rem] text-base whitespace-nowrap text-[#989ba2] lg:text-white font-semibold lg:hidden">
+                <div className="flex items-center justify-around gap-2"><IoCart />Store</div>
               </MenubarTrigger>
             </NavLink>
           </MenubarMenu>

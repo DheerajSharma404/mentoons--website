@@ -12,3 +12,19 @@ export const placeholders = [
     month: 'long',
     year: 'numeric'
   }).format(new Date());
+
+
+  export const cardsCategory = [
+    {
+      image:'/assets/cards/6-12.png',
+      category:'6-12 years',
+    },
+    {
+      image:'/assets/cards/13-19.png',
+      category:'13-19 years',
+    },
+    {
+      image:'/assets/cards/20+.png',
+      category:'20+ years',
+    }
+  ]

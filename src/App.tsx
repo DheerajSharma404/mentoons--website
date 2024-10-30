@@ -3,6 +3,7 @@ import Router from "./Routes"
 import ScrollToTop from "./components/comics/ScrollToTop"
 
 const App = () => {
+
   return (
     <>
       <ScrollToTop />
