@@ -10,7 +10,7 @@ const Register = () => {
         />
       </div>
       <div className=" flex-1 flex items-center justify-center">
-        <SignUp signInUrl="/sign-in" />
+        <SignUp signInUrl="/sign-in"/>
       </div>
     </div>
   );
